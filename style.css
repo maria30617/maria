@@ -1,0 +1,149 @@
+/* === TEMA DORAEMON === */
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7ff; /* Biru muda cerah */
+  color: #333;
+  background-image: url('doraemon.png'); /* Gambar Doraemon sebagai watermark */
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 200px;
+}
+
+/* === HEADER === */
+header {
+  background-color: #00aaff; /* Biru khas Doraemon */
+  color: white;
+  padding: 15px 20px;
+  border-bottom: 5px solid #ffcc00; /* Garis kuning (lonceng Doraemon) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Logo Doraemon di Header */
+.doraemon-logo {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+/* === CONTAINER UTAMA === */
+.container {
+  background-color: white;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === JUDUL HALAMAN === */
+h2 {
+  color: #00aaff;
+  border-bottom: 2px dashed #ffcc00;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* === FORM INPUT === */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #006699;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #00aaff;
+  border-radius: 6px;
+  background-color: #f0faff;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* === TOMBOL === */
+button {
+  background-color: #ff3333; /* Merah khas Doraemon */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+/* === PROFIL PEMILIK HOTEL === */
+.profile-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.profile-photo {
+  width: 140px;
+  border-radius: 10px;
+  border: 3px solid #00aaff;
+}
+
+.profile-text p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* === TABEL DATA PEMESAN === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 2px solid #00aaff;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #00aaff;
+  color: white;
+  padding: 12px 8px;
+  border: 1px solid white;
+  text-align: left;
+}
+
+table td {
+  padding: 10px 8px;
+  border: 1px solid #dddddd;
+}
+
+table tr:nth-child(even) {
+  background-color: #f0faff;
+}
+

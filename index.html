@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pemesanan Kamar Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="doraemon.png" alt="Doraemon Sapu" class="doraemon-logo">
+  <h1>Hotel Maroyo</h1>
+</header>
+
+</header>
+
+<div class="container profile">
+  <h2>Profil Pemilik Hotel</h2>
+  <div class="profile-content">
+    <img src="profile.jpg" alt="Foto Maria Ana Wanda" class="profile-photo">
+    <div class="profile-text">
+      <p><strong>Nama:</strong> Maria Ana Wanda</p>
+      <p><strong>Email:</strong> maria@maroyohotel.com</p>
+      <p><strong>No. Telepon:</strong> +62 812-3456-7890</p>
+      <p><strong>Deskripsi:</strong> Maria Ana Wanda adalah pemilik Hotel Maroyo yang telah berdiri sejak 2010 dan dikenal dengan pelayanannya yang ramah serta fasilitas lengkap untuk wisatawan maupun pelancong bisnis.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Pemesanan Kamar Hotel</h2>
+  <form action="submit_pemesanan.php" method="POST">
+    <div class="form-group">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="telepon">Nomor Telepon:</label>
+      <input type="tel" id="telepon" name="telepon" required>
+    </div>
+    <div class="form-group">
+      <label for="checkin">Tanggal Check-in:</label>
+      <input type="date" id="checkin" name="checkin" required>
+    </div>
+    <div class="form-group">
+      <label for="checkout">Tanggal Check-out:</label>
+      <input type="date" id="checkout" name="checkout" required>
+    </div>
+    <div class="form-group">
+      <label for="tipe_kamar">Tipe Kamar:</label>
+      <select id="tipe_kamar" name="tipe_kamar" required>
+        <option value="">-- Pilih Tipe Kamar --</option>
+        <option value="standard">Standard</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="suite">Suite</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="catatan">Catatan Tambahan:</label>
+      <textarea id="catatan" name="catatan" rows="4"></textarea>
+    </div>
+    <button type="submit">Pesan Sekarang</button>
+  </form>
+</div>
+
+</body>
+</html>
